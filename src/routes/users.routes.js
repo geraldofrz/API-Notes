@@ -7,5 +7,6 @@ const usersRoutes = Router();
 const userControllers = new UsersControllers();
 
 usersRoutes.post('/', userControllers.create);
+usersRoutes.put('/:id', userControllers.update);
 
 module.exports = usersRoutes;
